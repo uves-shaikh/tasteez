@@ -3,6 +3,7 @@ import './resturant.css'
 import { useState } from 'react'
 import Menu from './menuApi.js'
 import MenuCard from './MenuCard'
+
 import Navbar from './Navbar'
 
 const uniqueList = [
@@ -14,11 +15,11 @@ const uniqueList = [
 ]
 
 
+
 const Resturant = ({}) => {
 
   const [menuData, setMenuData] = useState(Menu)
   const [menuList,setMenuList] = useState(uniqueList)
-
 
   const filterItem = (category) => {
 
@@ -40,5 +41,6 @@ const Resturant = ({}) => {
     </>
   )
 }
+
 
 export default Resturant
